@@ -1,3 +1,9 @@
+#simple script to start a long script
+#and let it run for a set amount of time before
+#stopping and restarting a new run of the script
+#if the long script crashes, this script restarts
+#a new run after 5 seconds
+
 import subprocess as sp
 import time
 
@@ -14,4 +20,3 @@ while(time.time() < finalEndTime):
 	i = i+1
 
 print('Done!')
-
